@@ -1,0 +1,22 @@
+.portfolioItem {
+  max-width: 33.33%;
+  padding: 1.5rem;
+  width: 100%;
+}
+.portfolioItem .imgBox {
+  @apply bg-inherit border rounded border-zinc-700 overflow-hidden;
+  height: 11rem;
+  position: relative;
+  box-shadow: 0 0 10px #161515;
+}
+
+@media only screen and (max-width: 1200px) {
+  .portfolioItem {
+    max-width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .portfolioItem {
+    max-width: 90%;
+  }
+}

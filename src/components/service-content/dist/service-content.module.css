@@ -1,0 +1,35 @@
+.ServiceItem {
+  margin-bottom: 2rem;
+  max-width: 33.33%;
+}
+.ServiceItem .inner {
+  background-color: #898992;
+  border: 2px solid #e0650035;
+  border-radius: 10px;
+  text-align: center;
+  margin: 1.5rem;
+  padding: 1.2rem;
+}
+.ServiceItem .inner:hover {
+  box-shadow: 0 0 10px #0f0f0f;
+  transition-duration: 400ms;
+  transition-timing-function: ease-in-out;
+}
+.ServiceItem h3 {
+  font-size: x-large;
+  font-weight: 700;
+}
+.ServiceItem p {
+  font-size: large;
+}
+
+@media only screen and (max-width: 1200px) {
+  .ServiceItem {
+    max-width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .ServiceItem {
+    max-width: 90%;
+  }
+}

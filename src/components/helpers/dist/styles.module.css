@@ -1,0 +1,23 @@
+.Button {
+  @apply bg-zinc-300 hover:bg-orange-600 hover:text-white text-orange-600 border-orange-600 text-center py-2 px-4 duration-200 border inline-block;
+}
+
+.ContentLayout {
+  @apply text-3xl uppercase text-gray-400 inline-block my-28;
+  position: relative;
+  cursor: pointer;
+}
+.ContentLayout:hover {
+  color: #464646;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}
+.ContentLayout::before {
+  content: " ";
+  position: absolute;
+  margin: 0px 0px -10px 0;
+  width: 50px;
+  border-bottom: 3px solid #e06500;
+  left: 0;
+  bottom: 0;
+}

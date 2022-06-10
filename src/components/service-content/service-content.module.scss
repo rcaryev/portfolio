@@ -1,0 +1,45 @@
+.ServiceItem {
+  margin-bottom: 2rem;
+  max-width: 33.33%;
+  & .inner {
+    background-color: rgb(137, 137, 146);
+    border: 2px solid #e0650035;
+    border-radius: 10px;
+    text-align: center;
+    margin: 1.5rem;
+    padding: 1.2rem;
+    &:hover {
+      box-shadow: 0 0 10px rgb(15, 15, 15);
+      transition-duration: 400ms;
+      transition-timing-function: ease-in-out;
+    }
+  }
+  h3 {
+    font-size: x-large;
+    font-weight: 700;
+  }
+  p {
+    font-size: large;
+  }
+}
+@media only screen and(max-width:1500px) {
+}
+@media only screen and(max-width:1200px) {
+  .ServiceItem {
+    max-width: 50%;
+  }
+}
+@media only screen and(max-width:992px) {
+}
+
+@media only screen and(max-width:768px) {
+  .ServiceItem {
+    max-width: 90%;
+  }
+}
+
+@media only screen and(max-width:480px) {
+}
+
+@media only screen and(max-width:320px) {
+}

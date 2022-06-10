@@ -1,0 +1,157 @@
+@import "styles/media";
+.aside {
+  @apply flex items-center justify-between flex-col w-[20%]  h-screen bg-zinc-500 fixed overflow-x-hidden;
+}
+
+.menuItem,
+.active {
+  @apply flex  text-3xl border-b-2 pb-2 border-opacity-20 border-orange-600  m-5 text-gray-900 hover:text-orange-600  ease-in-out duration-150;
+}
+.active {
+  @apply text-orange-800;
+}
+.icon {
+  @apply w-8 mx-4;
+}
+.alink {
+  @apply -my-2;
+}
+.Minlogo {
+  font-weight: 700;
+  padding: 0 10px;
+  position: absolute;
+  top: 2%;
+  left: 10%;
+  height: 3rem;
+  font-size: 1.7rem;
+  box-shadow: 1px 1px 1px 0px;
+  cursor: pointer;
+  ::before {
+    content: " ";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 3px solid #e06500;
+    border-left: 3px solid #e06500;
+    bottom: 0;
+    left: 0px;
+  }
+  ::after {
+    content: " ";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 3px solid #e06500;
+    border-right: 3px solid #e06500;
+    top: 0;
+    right: 0;
+  }
+}
+
+.logo {
+  @apply relative w-9/12 mt-10 p-5 rounded-lg text-center hover:scale-105 hover:text-orange-600 duration-150 ease-in-out cursor-pointer;
+  ::before {
+    content: " ";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-bottom: 5px solid #e06500;
+    border-left: 5px solid #e06500;
+    bottom: 0;
+    left: 0;
+  }
+  ::after {
+    content: " ";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-top: 5px solid #e06500;
+    border-right: 5px solid #e06500;
+    top: 0;
+    right: 0;
+  }
+}
+
+@media only screen and(max-width:1500px) {
+  .aside {
+    a {
+      @apply text-3xl;
+    }
+  }
+
+  .alink {
+    a {
+      @apply text-2xl;
+    }
+  }
+  .icon {
+    @apply w-6 mx-3;
+  }
+}
+
+@media only screen and(max-width:1200px) {
+  .logo {
+    span {
+      display: none;
+    }
+    ::before {
+      scale: 0.7;
+    }
+    transition: 350ms;
+    box-shadow: 10px 10px 10px 0;
+  }
+}
+@media only screen and(max-width:992px) {
+}
+@media only screen and(max-width:768px) {
+  .aside {
+    h6 {
+      display: none;
+    }
+  }
+  .logo {
+    @apply my-7;
+  }
+  .icon {
+    @apply w-9;
+  }
+  .alink {
+    visibility: hidden;
+    width: 0;
+  }
+  .menuItem {
+    position: relative;
+    &:hover {
+      .icon {
+        visibility: hidden;
+        transition: 50ms;
+      }
+      .alink {
+        a {
+          @apply text-xl m-0;
+        }
+        visibility: visible;
+        transition: 150ms;
+        border-radius: 10px;
+        position: absolute;
+        left: 0rem;
+        top: 0px;
+        text-align: center;
+      }
+    }
+  }
+}
+@media only screen and(max-width:480px) {
+  .logo {
+    @apply p-3 w-[60px] h-[60px];
+  }
+  .menuItem:hover {
+    .alink {
+      a {
+        @apply text-[1rem];
+      }
+    }
+  }
+}
+@media only screen and(max-width:320px) {
+}

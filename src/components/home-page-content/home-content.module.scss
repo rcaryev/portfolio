@@ -1,0 +1,62 @@
+.image {
+  @apply w-[400px] p-10 my-auto mx-10 relative;
+  /* box-shadow: 0px 0px 3px 0; */
+}
+.image::before {
+  content: " ";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-top: 5px solid #e06500;
+  border-left: 5px solid #e06500;
+  top: 0px;
+  left: 0px;
+}
+.image::after {
+  content: " ";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-right: 5px solid #e06500;
+  border-bottom: 5px solid #e06500;
+  right: 0px;
+  bottom: 0px;
+}
+.htext1 {
+  @apply text-4xl mb-3;
+}
+.htext2 {
+  @apply text-5xl mb-3 flex;
+}
+.maintext {
+  @apply w-3/4  my-auto;
+}
+
+/*---------------adaptive-----------------*/
+@media only screen and(max-width:1500px) {
+}
+@media only screen and(max-width:1200px) {
+  .image {
+    display: none;
+  }
+  .maintext {
+    @apply w-full text-justify;
+  }
+}
+@media only screen and(max-width:992px) {
+}
+@media only screen and(max-width:768px) {
+  .maintext {
+    @apply text-center;
+    .htext1 {
+      @apply text-[1.5rem];
+    }
+    .htext2 {
+      @apply justify-center text-[2rem];
+    }
+  }
+}
+@media only screen and(max-width:480px) {
+}
+@media only screen and(max-width:320px) {
+}
