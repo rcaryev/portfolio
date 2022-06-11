@@ -29,7 +29,7 @@ export default function AboutContent() {
     <div className={styles.aboutContainer}>
       <div className={styles.mainTitle}>
         <h1 className={styles.hh1}>
-          I'm <span className=" ">Rahman Charyew</span> and I'm new Web
+          I am <span className=" ">Rahman Charyew</span> and I am new Web
           developer
         </h1>
         <p className="text-xl mb-6 ">{data.texts.p_lg}</p>

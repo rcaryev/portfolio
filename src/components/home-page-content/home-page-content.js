@@ -20,7 +20,7 @@ export default function HomePage() {
         </h2>
         <h1 className={styles.htext2}>
           <div>
-            <span>I'm a </span>
+            <span>I am a </span>
           </div>{" "}
           <Typed className="flex" />
         </h1>
